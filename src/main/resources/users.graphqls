@@ -1,0 +1,50 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    user(id: Int!): User
+    post(id: Int!): Post
+    comment(id: Int!): Comment
+    commentsByPost(postId: Int!): [Comment]
+}
+
+type User {
+	id: Int!
+	name: String!
+	username: String
+	email: String
+	phone: String
+	website: String
+	address: UserAddress
+}
+
+type UserAddress {
+	street: String
+	suite: String
+	city: String
+	zipcode: String
+}
+
+
+type Mutation {
+    deletePost(id: Int!): Boolean
+    updatePost(id: Int!, title: String!, body: String!): Boolean
+}
+
+type Post {
+	id: Int!
+	user: User
+	title: String
+	body: String
+	comments: [Comment]
+}
+
+type Comment {
+	id: Int!
+	postId: Int
+	name: String
+	email: String
+	body: String
+}
