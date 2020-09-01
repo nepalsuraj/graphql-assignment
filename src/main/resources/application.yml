@@ -1,3 +1,10 @@
 typicode:
   url: https://jsonplaceholder.typicode.com
- 
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 515c34b1df7b464e6616
+            clientSecret: ad061863e61c341a7af1db16dc9f38ef6a8c1f81 

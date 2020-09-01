@@ -25,7 +25,7 @@ public class Post {
 
     private User user;
     
-    private String userId;
+    private Integer userId;
 
     private String title;
     

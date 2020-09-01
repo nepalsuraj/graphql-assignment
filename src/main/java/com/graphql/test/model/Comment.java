@@ -20,6 +20,8 @@ public class Comment {
     private Integer id;
 
     private Integer postId;
+    
+    private Post post;
 
     private String name;
 

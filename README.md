@@ -1,13 +1,15 @@
 # GraphQL-Spring-boot Application: 
 
 
-## 2. Running as a Packaged Application (Following ways)
+## 1. Running as a Packaged Application (Following ways)
     Way-1 : mvn clean install (using maven)
             java -jar target/spring-boot-graphql-0.0.1-SNAPSHOT.war
 
     Way-2 : mvn spring-boot:run (using maven)
 
-## 3. Once the application is started you can access http://localhost:8080/graphiql
+## 2. Once the application is started you can access http://localhost:8080/graphiql
+
+## 3. This is a Git Hub Single Sign on project, you will be redirected to Git Hub login page if you are not logged in to Git hub from your browswer.
 
 ## Testing the Application:
 

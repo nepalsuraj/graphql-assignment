@@ -43,7 +43,7 @@ type Post {
 
 type Comment {
 	id: Int!
-	postId: Int
+	post: Post
 	name: String
 	email: String
 	body: String
